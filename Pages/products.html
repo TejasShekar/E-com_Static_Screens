@@ -1,0 +1,272 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="author" content="Tejas Shekar" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
+    />
+    <title>P8 Gamez | Products</title>
+    <link rel="stylesheet" href="https://prime8-ui.netlify.app/styles.css" />
+    <link rel="stylesheet" href="../home.css" />
+    <link rel="stylesheet" href="./products.css" />
+  </head>
+  <body>
+    <header class="header">
+      <a href="../index.html" class="brand-name">
+        <h1>P8 Gamez</h1>
+      </a>
+      <nav class="header-nav">
+        <ul class="nav-list">
+          <li>
+            <div class="badge-icon-container">
+              <div class="cart-badge">
+                <i class="fas fa-shopping-cart fa-2x"></i>
+                <div class="notification-icon badge">5</div>
+              </div>
+            </div>
+          </li>
+          <li><a class="btn btn-link" href="#">Wishlist</a></li>
+          <li>
+            <a class="btn btn-link" href="#">Logout</a>
+          </li>
+        </ul>
+      </nav>
+    </header>
+    <aside class="filters">
+      <div class="filter-header">
+        <h3>Filters</h3>
+        <button class="btn btn-link">Clear All</button>
+      </div>
+      <section>
+        <h3 class="filter-name">Price</h3>
+        <label class="price-range" for="price-range">
+          <span>500</span>
+          <span>5000</span>
+        </label>
+        <input
+          id="price-range"
+          class="slider"
+          type="range"
+          min="500"
+          max="5000"
+          value="1000"
+        />
+      </section>
+      <section>
+        <h3 class="filter-name">Sort By</h3>
+        <ul>
+          <li>
+            <input id="sorting-options" type="radio" name="sort-by-price" />
+            <label for="sorting-options">Price - Low to High</label>
+          </li>
+          <li>
+            <input id="sorting-options" type="radio" name="sort-by-price" />
+            <label for="sorting-options">Price - High to Low</label>
+          </li>
+        </ul>
+      </section>
+      <section>
+        <h3 class="filter-name">Category</h3>
+        <ul>
+          <li>
+            <input id="category-options" type="checkbox" />
+            <label for="category-options">Action</label>
+          </li>
+          <li>
+            <input id="category-options" type="checkbox" />
+            <label for="category-options">Adventure</label>
+          </li>
+          <li>
+            <input id="category-options" type="checkbox" />
+            <label for="category-options">Racing</label>
+          </li>
+          <li>
+            <input id="category-options" type="checkbox" />
+            <label for="category-options">Sports</label>
+          </li>
+        </ul>
+      </section>
+      <section>
+        <h3 class="filter-name">Rating</h3>
+        <label class="rating" for="rating">
+          <span>0</span>
+          <span>5</span>
+        </label>
+        <input
+          id="rating"
+          class="slider"
+          type="range"
+          min="0"
+          max="5"
+          value="4"
+        />
+      </section>
+    </aside>
+    <main class="products">
+      <div class="products-container">
+        <div class="card">
+          <img
+            class="card-img"
+            src="https://store-images.s-microsoft.com/image/apps.8135.66515090704019777.7fa547c1-c211-4229-a4d3-3ceef762e0a4.0bb0ac0a-9d63-4d91-8e53-f2e39a040bcd"
+            alt="Lenovo Legion 5"
+          />
+          <div class="card-info">
+            <p class="card-title">Grand Theft Auto V</p>
+            <div class="price-info">
+              <div class="final-price">₹2,000</div>
+              <di class="mrp">₹2,499</di>
+              <p class="price-percentage">(20% OFF)</p>
+            </div>
+          </div>
+          <div class="cta">
+            <button class="btn btn-primary">Add to Cart</button>
+            <button class="btn btn-secondary">Wishlist</button>
+          </div>
+        </div>
+        <div class="card">
+          <img
+            class="card-img"
+            src="https://store-images.s-microsoft.com/image/apps.26142.69997608528322872.06dc9610-5c4e-484e-b028-58ad215e637a.b216af15-301f-4f23-83a3-69a59a87985b    "
+            alt="Lenovo Legion 5"
+          />
+          <div class="card-info">
+            <p class="card-title">Watch Dogs 2</p>
+            <div class="price-info">
+              <div class="final-price">₹2,000</div>
+              <di class="mrp">₹2,499</di>
+              <p class="price-percentage">(20% OFF)</p>
+            </div>
+          </div>
+          <div class="cta">
+            <button class="btn btn-primary">Add to Cart</button>
+            <button class="btn btn-secondary">Wishlist</button>
+          </div>
+        </div>
+        <div class="card">
+          <img
+            class="card-img"
+            src="https://store-images.s-microsoft.com/image/apps.29520.63657969076271726.154f5a09-55ab-4b31-bc57-4e0335fab06a.98159a5f-99d5-4db9-89bc-4ae02f971596"
+            alt="Lenovo Legion 5"
+          />
+          <div class="card-info">
+            <p class="card-title">Assassin's Creed Origins</p>
+            <div class="price-info">
+              <div class="final-price">₹2,000</div>
+              <di class="mrp">₹2,499</di>
+              <p class="price-percentage">(20% OFF)</p>
+            </div>
+          </div>
+          <div class="cta">
+            <button class="btn btn-primary">Add to Cart</button>
+            <button class="btn btn-secondary">Wishlist</button>
+          </div>
+        </div>
+        <div class="card">
+          <img
+            class="card-img"
+            src="https://store-images.s-microsoft.com/image/apps.9961.63309362003335928.4079e21b-b00f-4446-a680-6bf9c0eb0158.f69e9d47-aef9-4aba-9297-915f02c744e9"
+            alt="Lenovo Legion 5"
+          />
+          <div class="card-info">
+            <p class="card-title">Assassin's Creed Syndicate</p>
+            <div class="price-info">
+              <div class="final-price">₹2,000</div>
+              <di class="mrp">₹2,499</di>
+              <p class="price-percentage">(20% OFF)</p>
+            </div>
+          </div>
+          <div class="cta">
+            <button class="btn btn-primary">Add to Cart</button>
+            <button class="btn btn-secondary">Wishlist</button>
+          </div>
+        </div>
+        <div class="card">
+          <img
+            class="card-img"
+            src="https://store-images.s-microsoft.com/image/apps.27657.69516029925336975.e3cb0155-71cd-4799-bed4-63da86cce109.61267421-c294-418d-98ad-81f696989b4f"
+            alt="Lenovo Legion 5"
+          />
+          <div class="card-info">
+            <p class="card-title">Sleeping Dogs : Definitive Edition</p>
+            <div class="price-info">
+              <div class="final-price">₹2,000</div>
+              <di class="mrp">₹2,499</di>
+              <p class="price-percentage">(20% OFF)</p>
+            </div>
+          </div>
+          <div class="cta">
+            <button class="btn btn-primary">Add to Cart</button>
+            <button class="btn btn-secondary">Wishlist</button>
+          </div>
+        </div>
+        <div class="card">
+          <img
+            class="card-img"
+            src="https://store-images.s-microsoft.com/image/apps.25499.69435230515002378.5c54c210-6100-4e84-81d0-b92a5aadc00d.621c04a4-1dba-4507-9975-15242516a0a3"
+            alt="Lenovo Legion 5"
+          />
+          <div class="card-info">
+            <p class="card-title">Need For Speed - Heat</p>
+            <div class="price-info">
+              <div class="final-price">₹2,000</div>
+              <di class="mrp">₹2,499</di>
+              <p class="price-percentage">(20% OFF)</p>
+            </div>
+          </div>
+          <div class="cta">
+            <button class="btn btn-primary">Add to Cart</button>
+            <button class="btn btn-secondary">Wishlist</button>
+          </div>
+        </div>
+        <div class="card">
+          <img
+            class="card-img"
+            src="https://store-images.s-microsoft.com/image/apps.38337.69011092827716296.e9190db7-6f4c-478c-8555-3edad4336a39.c312dbb9-bd59-403b-9161-3d058274b782"
+            alt="Lenovo Legion 5"
+          />
+          <div class="card-info">
+            <p class="card-title">Assassin's Creed - The Ezio Collection</p>
+            <div class="price-info">
+              <div class="final-price">₹2,000</div>
+              <di class="mrp">₹2,499</di>
+              <p class="price-percentage">(20% OFF)</p>
+            </div>
+          </div>
+          <div class="cta">
+            <button class="btn btn-primary">Add to Cart</button>
+            <button class="btn btn-secondary">Wishlist</button>
+          </div>
+        </div>
+        <div class="card">
+          <img
+            class="card-img"
+            src="https://store-images.s-microsoft.com/image/apps.58702.13536437121175354.18c8cdb9-4b5c-42e4-ae64-1c5d6063fc7e.54c3f469-3e75-4490-9eee-a6e6b8ceb998"
+            alt="Lenovo Legion 5"
+          />
+          <div class="card-info">
+            <p class="card-title">FIFA 2022</p>
+            <div class="price-info">
+              <div class="final-price">₹2,000</div>
+              <di class="mrp">₹2,499</di>
+              <p class="price-percentage">(20% OFF)</p>
+            </div>
+          </div>
+          <div class="cta">
+            <button class="btn btn-primary">Add to Cart</button>
+            <button class="btn btn-secondary">Wishlist</button>
+          </div>
+        </div>
+      </div>
+    </main>
+  </body>
+</html>
