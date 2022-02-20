@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="author" content="Tejas Shekar" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
+    />
+    <title>P8 Gamez</title>
+    <link rel="stylesheet" href="https://prime8-ui.netlify.app/styles.css" />
+    <link rel="stylesheet" href="./home.css" />
+  </head>
+  <body>
+    <header class="header">
+      <a href="#" class="brand-name">
+        <h1>P8 Gamez</h1>
+      </a>
+      <nav class="header-nav">
+        <ul class="nav-list">
+          <li>
+            <div class="badge-icon-container">
+              <div class="cart-badge">
+                <i class="fas fa-shopping-cart fa-2x"></i>
+                <div class="notification-icon badge">5</div>
+              </div>
+            </div>
+          </li>
+          <li><a class="btn btn-link" href="#">Wishlist</a></li>
+          <li>
+            <a class="btn btn-link" href="#">Logout</a>
+          </li>
+        </ul>
+      </nav>
+    </header>
+    <main>
+      <div class="hero">
+        <img
+          class="img-responsive"
+          src="./Assets/trending-games.jpg"
+          alt="Trending Games"
+        />
+        <div class="overlay"></div>
+        <button class="btn btn-primary"><a href="#categories">Shop Games</a></button>
+      </div>
+      <div id="categories" class="category-container">
+        <div class="category">
+          <img
+            class="category-img"
+            src="./Assets/action.jpg"
+            alt="Action Games"
+          />
+          <a href="" class="category-text"><h2>Action Games</h2></a>
+        </div>
+        <div class="category">
+          <img
+            class="category-img"
+            src="./Assets/adventure.jpg"
+            alt="Adventure Games"
+          />
+          <a href="" class="category-text"><h2>Adventure Games</h2></a>
+        </div>
+        <div class="category">
+          <img
+            class="category-img"
+            src="./Assets/racing.jpg"
+            alt="Racing Games"
+          />
+          <a href="" class="category-text"><h2>Racing Games</h2></a>
+        </div>
+        <div class="category">
+          <img
+            class="category-img"
+            src="./Assets/sports.jpg"
+            alt="Sports Games"
+          />
+          <a href="" class="category-text"><h2>Sports Games</h2></a>
+        </div>
+      </div>
+    </main>
+  </body>
+</html>
