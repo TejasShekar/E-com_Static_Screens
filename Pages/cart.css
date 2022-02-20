@@ -1,0 +1,45 @@
+.cart{
+    margin: 1rem;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 1rem;
+}
+
+.card-horizontal{
+    width: 35rem;
+    margin: 1rem;
+    justify-content: space-between;
+}
+
+.card-horizontal > div:last-child{
+    margin: 0.5rem auto;
+}
+
+.card-horizontal img {
+    max-width: 10rem;
+}
+
+.card-info i {
+    padding: 0 1rem;
+}
+
+.cart-summary{
+    width: 300px;
+    padding: 1rem;
+}
+
+.cart-summary-title{
+    font-weight: bold;
+    font-size: large;
+}
+
+.cart-item{
+    margin: 1rem 0;
+    display: flex;
+    justify-content: space-between;
+}
+
+.cart-summary button{
+    width: 100%;
+}
