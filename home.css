@@ -31,7 +31,7 @@
   min-width: 100%;
 }
 
-.btn-primary {
+.hero .btn-primary {
   position: absolute;
 }
 
@@ -46,7 +46,7 @@
 }
 
 .category-container {
-  margin: 1rem auto;
+  margin: 1rem;
   display: flex;
   justify-content: center;
   flex-wrap: wrap;
@@ -66,7 +66,7 @@
 }
 
 .category-text {
-    margin: 0;
+  margin: 0;
   position: absolute;
   top: 0;
   left: 0;
@@ -80,6 +80,6 @@
   opacity: 0;
 }
 
-.category-text:hover{
-    opacity: 1;
+.category-text:hover {
+  opacity: 1;
 }
