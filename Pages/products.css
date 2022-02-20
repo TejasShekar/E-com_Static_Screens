@@ -65,5 +65,5 @@ body {
 }
 
 .card {
-  justify-content: flex-end;
+  justify-content: space-between;
 }
