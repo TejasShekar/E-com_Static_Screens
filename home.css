@@ -39,6 +39,7 @@ a{
 
 .img-responsive {
   min-width: 100%;
+  max-height: calc(100vh - 5.5rem);
 }
 
 .hero .btn-primary {
@@ -53,6 +54,11 @@ a{
 .overlay {
   position: absolute;
   background: rgba(0, 0, 0, 0.6);
+}
+
+.category-heading{
+  margin-top: 1rem;
+  text-align: center;
 }
 
 .category-container {
