@@ -40,6 +40,11 @@
     justify-content: space-between;
 }
 
+.cart-summary > h3{
+    border-top: 1px solid var(--primary);
+    border-bottom: 1px solid var(--primary);
+}
+
 .cart-summary button{
     width: 100%;
 }
