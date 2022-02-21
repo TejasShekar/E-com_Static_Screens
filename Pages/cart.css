@@ -12,10 +12,6 @@
     justify-content: space-between;
 }
 
-.card-horizontal > div:last-child{
-    margin: 0.5rem auto;
-}
-
 .card-horizontal img {
     max-width: 10rem;
 }

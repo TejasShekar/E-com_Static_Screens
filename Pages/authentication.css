@@ -1,0 +1,46 @@
+html,
+.full-height {
+  height: 100%;
+}
+
+.brand-name h1{
+    font-size: 3rem;
+}
+
+.card{
+    max-width: 30rem;
+}
+
+.w-90 {
+  width: 90%;
+}
+
+.auth {
+  display: grid;
+  place-items: center;
+}
+
+.auth-section {
+  display: flex;
+  flex-direction: column;
+  margin: 1rem;
+}
+
+.auth-section > :nth-child(odd){
+    margin-bottom: 0.5rem;
+}
+
+.auth-options{
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+    flex-wrap: wrap;
+}
+
+.auth-options > *{
+    margin: 0;
+}
+
+.card .btn{
+    text-align: center;
+}
