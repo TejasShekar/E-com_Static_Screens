@@ -16,59 +16,70 @@
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
     />
     <title>P8 Gamez | Products</title>
-    <link rel="stylesheet" href="https://prime8-ui.netlify.app/styles.css" />
+    <link
+      rel="stylesheet"
+      href="https://prime8-ui.netlify.app/styles.css"
+    />
     <link rel="stylesheet" href="../home.css" />
     <link rel="stylesheet" href="./products.css" />
   </head>
   <body>
-    <header class="header">
-      <a href="../index.html" class="brand-name">
+    <header class="header flex-sbw-c flex-wrap">
+      <a href="../index.html" class="brand-name p-sm m-1">
         <h1>P8 Gamez</h1>
       </a>
-      <nav class="header-nav">
-        <ul class="nav-list">
-          <li>
-            <a href="./cart.html"
-              ><div class="badge-icon-container">
-                <div class="cart-badge">
+      <nav class="mx-1">
+        <ul class="nav-list flex">
+          <li class="mx-0 my-auto">
+            <a class="p-sm m-sm" href="./cart.html">
+              <div class="pos-relative">
+                <div>
                   <i class="fas fa-shopping-cart fa-2x"></i>
-                  <div class="notification-icon badge">2</div>
+                  <div class="notification-icon badge pos-abs flex-center">
+                    2
+                  </div>
                 </div>
-              </div></a
+              </div>
+            </a>
+          </li>
+          <li class="mx-1 my-auto">
+            <a class="btn py-sm px-1 btn-link" href="./wishlist.html"
+              >Wishlist</a
             >
           </li>
-          <li><a class="btn btn-link" href="./wishlist.html">Wishlist</a></li>
-          <li>
-            <a class="btn btn-secondary" href="./login.html">Logout</a>
+          <li class="mx-0 my-auto">
+            <a class="btn py-sm px-1 btn-secondary" href="./login.html"
+              >Logout</a
+            >
           </li>
         </ul>
       </nav>
     </header>
-    <aside class="filters">
-      <div class="filter-header">
+    <aside class="side-nav filters px-1 py-2">
+      <div class="filter-header flex-sbw">
         <h3>Filters</h3>
-        <button class="btn btn-link">Clear All</button>
+        <button class="btn py-sm px-1 btn-link">Clear All</button>
       </div>
-      <section>
-        <h3 class="filter-name">Price</h3>
-        <label class="price-range" for="price-range">
+      <section class="my-2 mx-0">
+        <h3 class="filter-name mb-1">Price</h3>
+        <label class="flex-sbw" for="price-range">
           <span>500</span>
           <span>5000</span>
         </label>
         <input
           id="price-range"
-          class="slider"
+          class="slider m-0"
           type="range"
           min="500"
           max="5000"
-          value="1000"
+          value="2000"
         />
       </section>
-      <section>
-        <h3 class="filter-name">Sort By</h3>
+      <section class="my-2 mx-0">
+        <h3 class="filter-name mb-1">Sort By</h3>
         <ul>
           <li>
-            <input id="low-to-high" type="radio" name="sort-by-price" />
+            <input id="low-to-high" type="radio" name="sort-by-price" checked />
             <label for="low-to-high">Price - Low to High</label>
           </li>
           <li>
@@ -77,8 +88,8 @@
           </li>
         </ul>
       </section>
-      <section>
-        <h3 class="filter-name">Category</h3>
+      <section class="my-2 mx-0">
+        <h3 class="filter-name mb-1">Category</h3>
         <ul>
           <li>
             <input id="action-category" type="checkbox" />
@@ -98,15 +109,15 @@
           </li>
         </ul>
       </section>
-      <section>
-        <h3 class="filter-name">Rating</h3>
-        <label class="rating" for="rating">
+      <section class="my-2 mx-0">
+        <h3 class="filter-name mb-1">Rating</h3>
+        <label class="flex-sbw" for="rating">
           <span>0</span>
           <span>5</span>
         </label>
         <input
           id="rating"
-          class="slider"
+          class="slider m-0"
           type="range"
           min="0"
           max="5"
@@ -115,157 +126,157 @@
       </section>
     </aside>
     <main class="products">
-      <div class="products-container">
-        <div class="card">
+      <div class="products-container grid g-2 mx-auto my-1">
+        <div class="card pos-relative flex-sbw-c flex-col">
           <img
             class="card-img"
             src="https://store-images.s-microsoft.com/image/apps.8135.66515090704019777.7fa547c1-c211-4229-a4d3-3ceef762e0a4.0bb0ac0a-9d63-4d91-8e53-f2e39a040bcd"
             alt="Grand Theft Auto V"
           />
-          <div class="card-info">
+          <div class="card-info flex-sbw flex-col">
             <p class="card-title">Grand Theft Auto V</p>
-            <div class="price-info">
+            <div class="price-info flex-c">
               <div class="final-price">₹2,000</div>
               <di class="mrp">₹2,499</di>
               <p class="price-percentage">(20% OFF)</p>
             </div>
           </div>
           <div class="cta">
-            <button class="btn btn-primary">Add to Cart</button>
-            <button class="btn btn-secondary">Wishlist</button>
+            <button class="btn py-sm px-1 btn-primary">Add to Cart</button>
+            <button class="btn py-sm px-1 btn-secondary">Wishlist</button>
           </div>
         </div>
-        <div class="card">
+        <div class="card pos-relative flex-sbw-c flex-col">
           <img
             class="card-img"
             src="https://store-images.s-microsoft.com/image/apps.26142.69997608528322872.06dc9610-5c4e-484e-b028-58ad215e637a.b216af15-301f-4f23-83a3-69a59a87985b"
             alt="Watch Dogs 2"
           />
-          <div class="card-info">
+          <div class="card-info flex-sbw flex-col">
             <p class="card-title">Watch Dogs 2</p>
-            <div class="price-info">
+            <div class="price-info flex-c">
               <div class="final-price">₹2,000</div>
               <di class="mrp">₹2,499</di>
               <p class="price-percentage">(20% OFF)</p>
             </div>
           </div>
           <div class="cta">
-            <button class="btn btn-primary">Add to Cart</button>
-            <button class="btn btn-secondary">Wishlist</button>
+            <button class="btn py-sm px-1 btn-primary">Add to Cart</button>
+            <button class="btn py-sm px-1 btn-secondary">Wishlist</button>
           </div>
         </div>
-        <div class="card">
+        <div class="card pos-relative flex-sbw-c flex-col">
           <img
             class="card-img"
             src="https://store-images.s-microsoft.com/image/apps.29520.63657969076271726.154f5a09-55ab-4b31-bc57-4e0335fab06a.98159a5f-99d5-4db9-89bc-4ae02f971596"
             alt="Assassin's Creed Origins"
           />
-          <div class="card-info">
+          <div class="card-info flex-sbw flex-col">
             <p class="card-title">Assassin's Creed Origins</p>
-            <div class="price-info">
+            <div class="price-info flex-c">
               <div class="final-price">₹2,000</div>
               <di class="mrp">₹2,499</di>
               <p class="price-percentage">(20% OFF)</p>
             </div>
           </div>
           <div class="cta">
-            <button class="btn btn-primary">Add to Cart</button>
-            <button class="btn btn-secondary">Wishlist</button>
+            <button class="btn py-sm px-1 btn-primary">Add to Cart</button>
+            <button class="btn py-sm px-1 btn-secondary">Wishlist</button>
           </div>
         </div>
-        <div class="card">
+        <div class="card pos-relative flex-sbw-c flex-col">
           <img
             class="card-img"
             src="https://store-images.s-microsoft.com/image/apps.9961.63309362003335928.4079e21b-b00f-4446-a680-6bf9c0eb0158.f69e9d47-aef9-4aba-9297-915f02c744e9"
             alt="Assassin's Creed Syndicate"
           />
-          <div class="card-info">
+          <div class="card-info flex-sbw flex-col">
             <p class="card-title">Assassin's Creed Syndicate</p>
-            <div class="price-info">
+            <div class="price-info flex-c">
               <div class="final-price">₹2,000</div>
               <di class="mrp">₹2,499</di>
               <p class="price-percentage">(20% OFF)</p>
             </div>
           </div>
           <div class="cta">
-            <button class="btn btn-primary">Add to Cart</button>
-            <button class="btn btn-secondary">Wishlist</button>
+            <button class="btn py-sm px-1 btn-primary">Add to Cart</button>
+            <button class="btn py-sm px-1 btn-secondary">Wishlist</button>
           </div>
         </div>
-        <div class="card">
+        <div class="card pos-relative flex-sbw-c flex-col">
           <img
             class="card-img"
             src="https://store-images.s-microsoft.com/image/apps.27657.69516029925336975.e3cb0155-71cd-4799-bed4-63da86cce109.61267421-c294-418d-98ad-81f696989b4f"
             alt="Sleeping Dogs : Definitive Edition"
           />
-          <div class="card-info">
+          <div class="card-info flex-sbw flex-col">
             <p class="card-title">Sleeping Dogs : Definitive Edition</p>
-            <div class="price-info">
+            <div class="price-info flex-c">
               <div class="final-price">₹2,000</div>
               <di class="mrp">₹2,499</di>
               <p class="price-percentage">(20% OFF)</p>
             </div>
           </div>
           <div class="cta">
-            <button class="btn btn-primary">Add to Cart</button>
-            <button class="btn btn-secondary">Wishlist</button>
+            <button class="btn py-sm px-1 btn-primary">Add to Cart</button>
+            <button class="btn py-sm px-1 btn-secondary">Wishlist</button>
           </div>
         </div>
-        <div class="card">
+        <div class="card pos-relative flex-sbw-c flex-col">
           <img
             class="card-img"
             src="https://store-images.s-microsoft.com/image/apps.25499.69435230515002378.5c54c210-6100-4e84-81d0-b92a5aadc00d.621c04a4-1dba-4507-9975-15242516a0a3"
             alt="Need For Speed - Heat"
           />
-          <div class="card-info">
+          <div class="card-info flex-sbw flex-col">
             <p class="card-title">Need For Speed - Heat</p>
-            <div class="price-info">
+            <div class="price-info flex-c">
               <div class="final-price">₹2,000</div>
               <di class="mrp">₹2,499</di>
               <p class="price-percentage">(20% OFF)</p>
             </div>
           </div>
           <div class="cta">
-            <button class="btn btn-primary">Add to Cart</button>
-            <button class="btn btn-secondary">Wishlist</button>
+            <button class="btn py-sm px-1 btn-primary">Add to Cart</button>
+            <button class="btn py-sm px-1 btn-secondary">Wishlist</button>
           </div>
         </div>
-        <div class="card">
+        <div class="card pos-relative flex-sbw-c flex-col">
           <img
             class="card-img"
             src="https://store-images.s-microsoft.com/image/apps.38337.69011092827716296.e9190db7-6f4c-478c-8555-3edad4336a39.c312dbb9-bd59-403b-9161-3d058274b782"
             alt="Assassin's Creed - The Ezio Collection"
           />
-          <div class="card-info">
+          <div class="card-info flex-sbw flex-col">
             <p class="card-title">Assassin's Creed - The Ezio Collection</p>
-            <div class="price-info">
+            <div class="price-info flex-c">
               <div class="final-price">₹2,000</div>
               <di class="mrp">₹2,499</di>
               <p class="price-percentage">(20% OFF)</p>
             </div>
           </div>
           <div class="cta">
-            <button class="btn btn-primary">Add to Cart</button>
-            <button class="btn btn-secondary">Wishlist</button>
+            <button class="btn py-sm px-1 btn-primary">Add to Cart</button>
+            <button class="btn py-sm px-1 btn-secondary">Wishlist</button>
           </div>
         </div>
-        <div class="card">
+        <div class="card pos-relative flex-sbw-c flex-col">
           <img
             class="card-img"
             src="https://store-images.s-microsoft.com/image/apps.58702.13536437121175354.18c8cdb9-4b5c-42e4-ae64-1c5d6063fc7e.54c3f469-3e75-4490-9eee-a6e6b8ceb998"
             alt="FIFA 2022"
           />
-          <div class="card-info">
+          <div class="card-info flex-sbw flex-col">
             <p class="card-title">FIFA 2022</p>
-            <div class="price-info">
+            <div class="price-info flex-c">
               <div class="final-price">₹2,000</div>
               <di class="mrp">₹2,499</di>
               <p class="price-percentage">(20% OFF)</p>
             </div>
           </div>
           <div class="cta">
-            <button class="btn btn-primary">Add to Cart</button>
-            <button class="btn btn-secondary">Wishlist</button>
+            <button class="btn py-sm px-1 btn-primary">Add to Cart</button>
+            <button class="btn py-sm px-1 btn-secondary">Wishlist</button>
           </div>
         </div>
       </div>
