@@ -12,7 +12,6 @@ body {
 
 .filters {
   grid-area: filters;
-  padding: 2rem 1rem 0;
   position: sticky;
   overflow-y: auto;
 }
@@ -21,35 +20,21 @@ body {
   color: var(--text-color);
 }
 
-.filters section {
-  margin: 2rem 0;
-}
-
 .filters ul {
   padding: 0;
 }
 
 .filter-header {
-  display: flex;
-  justify-content: space-between;
   align-items: baseline;
 }
 
 .filter-name {
   font-size: 1.5rem;
   line-height: 2rem;
-  margin-bottom: 1rem;
-}
-
-.price-range,
-.rating {
-  display: flex;
-  justify-content: space-between;
 }
 
 .slider {
   width: 100%;
-  margin: 0;
 }
 
 .products {
@@ -57,10 +42,7 @@ body {
 }
 
 .products-container {
-  display: grid;
   grid-template-columns: repeat(auto-fit, minmax(12rem, 1fr));
-  gap: 2rem;
-  margin: 1rem auto;
   max-width: 90%;
   justify-items: center;
 }
