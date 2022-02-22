@@ -16,39 +16,46 @@
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
     />
     <title>P8 Gamez | Login</title>
-    <link rel="stylesheet" href="https://prime8-ui.netlify.app/styles.css" />
+    <link
+      rel="stylesheet"
+      href="https://prime8-ui.netlify.app/styles.css"
+    />
     <link rel="stylesheet" href="../home.css" />
     <link rel="stylesheet" href="./authentication.css" />
   </head>
-  <body class="">
-    <main class="full-height auth">
-      <div class="card w-90 scale-90">
-        <a href="../index.html" class="brand-name">
+  <body>
+    <main class="full-height flex-center">
+      <div class="card pos-relative flex-sbw-c flex-col w-90 scale-80">
+        <a href="../index.html" class="brand-name p-sm m-1">
           <h1>P8 Gamez</h1>
         </a>
-        <div class="auth-section w-90">
-          <h2 class="auth-heading">Login</h2>
+        <div class="flex flex-col m-1 w-90">
+          <h2 class="auth-heading mb-1">Login</h2>
           <label class="input-label" for="u-name">Username</label>
           <input
+            class="mb-1"
             id="u-name"
             type="text"
             placeholder="Enter your username here"
           />
           <label class="input-label" for="u-password">Password</label>
           <input
+            class="mb-1"
             id="u-password"
             type="password"
             placeholder="Enter your password here"
           />
-          <div class="auth-options">
+          <div class="auth-options flex-sbw flex-wrap">
             <div>
               <input id="remember-me" type="checkbox" />
               <label for="remember-me">Remember me</label>
             </div>
-            <a class="active" href="#">Forgot your password ?</a>
+            <a class="active p-sm" href="#">Forgot your password ?</a>
           </div>
-          <a class="btn btn-primary" href="../index.html">Login</a>
-          <a class="btn" href="./signup.html">Create an account > </a>
+          <a class="btn btn-primary m-sm py-sm px-1" href="../index.html"
+            >Login</a
+          >
+          <a class="btn p-sm m-sm" href="./signup.html">Create an account > </a>
         </div>
       </div>
     </main>

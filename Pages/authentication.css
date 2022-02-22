@@ -10,24 +10,12 @@
   max-width: 30rem;
 }
 
-.scale-90 {
-  transform: scale(0.9);
+.scale-80 {
+  transform: scale(0.8);
 }
 
 .w-90 {
   width: 90%;
-}
-
-.auth {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-
-.auth-section {
-  display: flex;
-  flex-direction: column;
-  margin: 1rem;
 }
 
 .auth-section > :nth-child(odd) {
@@ -35,16 +23,13 @@
 }
 
 .auth-options {
-  display: flex;
-  justify-content: space-between;
   align-items: baseline;
-  flex-wrap: wrap;
 }
 
 .auth-options > * {
   margin: 0;
 }
 
-.card .btn {
+.btn {
   text-align: center;
 }
