@@ -16,84 +16,103 @@
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
     />
     <title>P8 Gamez</title>
-    <link rel="stylesheet" href="https://prime8-ui.netlify.app/styles.css" />
+    <link
+      rel="stylesheet"
+      href="https://prime8-ui.netlify.app/styles.css"
+    />
     <link rel="stylesheet" href="./home.css" />
   </head>
   <body>
-    <header class="header">
-      <a href="../index.html" class="brand-name">
+    <header class="header flex-sbw-c flex-wrap">
+      <a href="../index.html" class="brand-name p-sm m-1">
         <h1>P8 Gamez</h1>
       </a>
-      <nav class="header-nav">
-        <ul class="nav-list">
-          <li>
-            <a href="./Pages/cart.html"
-              ><div class="badge-icon-container">
-                <div class="cart-badge">
+      <nav class="mx-1">
+        <ul class="nav-list flex">
+          <li class="mx-0 my-auto">
+            <a class="p-sm m-sm" href="./Pages/cart.html">
+              <div class="pos-relative">
+                <div>
                   <i class="fas fa-shopping-cart fa-2x"></i>
-                  <div class="notification-icon badge">2</div>
+                  <div class="notification-icon badge pos-abs flex-center">
+                    2
+                  </div>
                 </div>
-              </div></a
+              </div>
+            </a>
+          </li>
+          <li class="mx-1 my-auto">
+            <a class="btn py-sm px-1 btn-link" href="./Pages/wishlist.html"
+              >Wishlist</a
             >
           </li>
-          <li><a class="btn btn-link" href="./Pages/wishlist.html">Wishlist</a></li>
-          <li>
-            <a class="btn btn-secondary" href="./Pages/login.html">Logout</a>
+          <li class="mx-0 my-auto">
+            <a class="btn py-sm px-1 btn-secondary" href="./Pages/login.html"
+              >Logout</a
+            >
           </li>
         </ul>
       </nav>
     </header>
     <main>
-      <div class="hero">
+      <div class="m-auto flex-center pos-relative">
         <img
           class="img-responsive"
           src="./Assets/trending-games.jpg"
           alt="Trending Games"
         />
-        <div class="overlay"></div>
-        <button class="btn btn-primary">
+        <div class="overlay pos-abs"></div>
+        <button class="btn btn-primary py-sm px-1 pos-abs">
           <a href="#categories">Shop Games</a>
         </button>
       </div>
-      <h2 class="category-heading" >C A T E G O R I E S</h2>
-      <div id="categories" class="category-container">
-        <div class="category">
+      <h2 class="category-heading mt-1 text-center">C A T E G O R I E S</h2>
+      <div id="categories" class="flex-c flex-wrap g-1 m-1">
+        <div class="category pos-relative">
           <img
             class="category-img"
             src="./Assets/action.jpg"
             alt="Action Games"
           />
-          <a href="./Pages/products.html" class="category-text"
+          <a
+            href="./Pages/products.html"
+            class="category-text pos-abs flex flex-col p-1"
             ><h2>Action Games</h2></a
           >
         </div>
-        <div class="category">
+        <div class="category pos-relative">
           <img
             class="category-img"
             src="./Assets/adventure.jpg"
             alt="Adventure Games"
           />
-          <a href="./Pages/products.html" class="category-text"
+          <a
+            href="./Pages/products.html"
+            class="category-text pos-abs flex flex-col p-1"
             ><h2>Adventure Games</h2></a
           >
         </div>
-        <div class="category">
+        <div class="category pos-relative">
           <img
             class="category-img"
             src="./Assets/racing.jpg"
             alt="Racing Games"
           />
-          <a href="./Pages/products.html" class="category-text"
+          <a
+            href="./Pages/products.html"
+            class="category-text pos-abs flex flex-col p-1"
             ><h2>Racing Games</h2></a
           >
         </div>
-        <div class="category">
+        <div class="category pos-relative">
           <img
             class="category-img"
             src="./Assets/sports.jpg"
             alt="Sports Games"
           />
-          <a href="./Pages/products.html" class="category-text"
+          <a
+            href="./Pages/products.html"
+            class="category-text pos-abs flex flex-col p-1"
             ><h2>Sports Games</h2></a
           >
         </div>
