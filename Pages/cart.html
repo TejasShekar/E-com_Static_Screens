@@ -16,97 +16,124 @@
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
     />
     <title>P8 Gamez | Cart</title>
-    <link rel="stylesheet" href="https://prime8-ui.netlify.app/styles.css" />
+    <link
+      rel="stylesheet"
+      href="https://prime8-ui.netlify.app/styles.css"
+    />
     <link rel="stylesheet" href="../home.css" />
     <link rel="stylesheet" href="./cart.css" />
   </head>
   <body>
-    <header class="header">
-      <a href="../index.html" class="brand-name">
+    <header class="header flex-sbw-c flex-wrap">
+      <a href="../index.html" class="brand-name p-sm m-1">
         <h1>P8 Gamez</h1>
       </a>
-      <nav class="header-nav">
-        <ul class="nav-list">
-          <li>
-            <a href="./cart.html"
-              ><div class="badge-icon-container">
-                <div class="cart-badge">
+      <nav class="mx-1">
+        <ul class="nav-list flex">
+          <li class="mx-0 my-auto">
+            <a class="p-sm m-sm" href="./cart.html">
+              <div class="pos-relative">
+                <div>
                   <i class="fas fa-shopping-cart fa-2x"></i>
-                  <div class="notification-icon badge">2</div>
+                  <div class="notification-icon badge pos-abs flex-center">
+                    2
+                  </div>
                 </div>
-              </div></a
+              </div>
+            </a>
+          </li>
+          <li class="mx-1 my-auto">
+            <a class="btn py-sm px-1 btn-link" href="./wishlist.html"
+              >Wishlist</a
             >
           </li>
-          <li><a class="btn btn-link" href="./wishlist.html">Wishlist</a></li>
-          <li>
-            <a class="btn btn-secondary" href="./login.html">Logout</a>
+          <li class="mx-0 my-auto">
+            <a class="btn py-sm px-1 btn-secondary" href="./login.html"
+              >Logout</a
+            >
           </li>
         </ul>
       </nav>
     </header>
-    <main class="cart">
+    <main class="flex-c flex-wrap m-1 g-1">
       <div class="cart-items">
-        <div class="card-horizontal">
+        <div class="card-horizontal pos-relative flex m-1">
           <img
             class="card-img-h"
             src="https://store-images.s-microsoft.com/image/apps.8135.66515090704019777.7fa547c1-c211-4229-a4d3-3ceef762e0a4.0bb0ac0a-9d63-4d91-8e53-f2e39a040bcd"
             alt="Grand Theft Auto V"
           />
-          <div class="card-details">
-            <div class="card-info">
+          <div class="card-details flex flex-col m-auto">
+            <div class="card-info flex-sbw flex-col">
               <p class="card-title">Grand Theft Auto V</p>
               <p>
-                Quantity: <i class="fas fa-minus-circle"></i>
+                Quantity: <i class="fas fa-minus-circle px-1 py-0"></i>
                 1
-                <i class="fas fa-plus-circle"></i>
+                <i class="fas fa-plus-circle px-1 py-0"></i>
               </p>
-              <div class="price-info">
+              <div class="price-info flex-c">
                 <p class="final-price">₹ 2,000</p>
                 <p class="mrp">₹ 2,499</p>
                 <p class="price-percentage">(20% OFF)</p>
               </div>
             </div>
             <div class="cta">
-              <button class="btn btn-secondary">Remove from Cart</button>
-              <button class="btn btn-primary">Move to Wishlist</button>
+              <button class="btn py-sm px-1 btn-secondary">
+                Remove from Cart
+              </button>
+              <button class="btn py-sm px-1 btn-primary">
+                Move to Wishlist
+              </button>
             </div>
           </div>
         </div>
-        <div class="card-horizontal">
+        <div class="card-horizontal pos-relative flex m-1">
           <img
             class="card-img-h"
             src="https://store-images.s-microsoft.com/image/apps.26142.69997608528322872.06dc9610-5c4e-484e-b028-58ad215e637a.b216af15-301f-4f23-83a3-69a59a87985b"
             alt="Watch Dogs 2"
           />
-          <div class="card-details">
-            <div class="card-info">
+          <div class="card-details flex flex-col m-auto">
+            <div class="card-info flex-sbw flex-col">
               <p class="card-title">Watch Dogs 2</p>
               <p>
-                Quantity: <i class="fas fa-minus-circle"></i>
+                Quantity: <i class="fas fa-minus-circle px-1 py-0"></i>
                 1
-                <i class="fas fa-plus-circle"></i>
+                <i class="fas fa-plus-circle px-1 py-0"></i>
               </p>
-              <div class="price-info">
+              <div class="price-info flex-c">
                 <p class="final-price">₹ 2,000</p>
                 <p class="mrp">₹ 2,499</p>
                 <p class="price-percentage">(20% OFF)</p>
               </div>
             </div>
             <div class="cta">
-              <button class="btn btn-secondary">Remove from Cart</button>
-              <button class="btn btn-primary">Move to Wishlist</button>
+              <button class="btn py-sm px-1 btn-secondary">
+                Remove from Cart
+              </button>
+              <button class="btn py-sm px-1 btn-primary">
+                Move to Wishlist
+              </button>
             </div>
           </div>
         </div>
       </div>
 
-      <div class="cart-summary">
+      <div class="cart-summary p-1">
         <p class="cart-summary-title">PRICE DETAILS</p>
-        <div class="cart-item">MRP <span>₹ 4,998</span></div>
-        <div class="cart-item">Discount <span> ₹ 998</span></div>
-        <div class="cart-item">Delivery Charges <span>₹ 0</span></div>
-        <h3 class="cart-item">TOTAL AMOUNT <span>₹ 4,000</span></h3>
-        <button class="btn btn-primary">PLACE ORDER</button>
+        <div class="cart-item flex-sbw my-1 mx-0">
+          MRP <span class="span">₹ 4,998</span>
+        </div>
+        <div class="cart-item flex-sbw my-1 mx-0">
+          Discount <span class="span"> ₹ 998</span>
+        </div>
+        <div class="cart-item flex-sbw my-1 mx-0">
+          Delivery Charges <span class="span">₹ 0</span>
+        </div>
+        <h3 class="cart-item flex-sbw my-1 mx-0">
+          TOTAL AMOUNT <span class="span">₹ 4,000</span>
+        </h3>
+        <button class="btn py-sm px-1 btn-primary">PLACE ORDER</button>
       </div>
     </main>
   </body>
