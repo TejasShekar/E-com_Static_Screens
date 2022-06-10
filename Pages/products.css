@@ -3,7 +3,7 @@ body {
   grid-template-areas:
     "header header"
     "filters products";
-  grid-template-columns: 16rem 1fr;
+  grid-template-columns: 17rem 1fr;
 }
 
 .header {
